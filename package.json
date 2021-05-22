@@ -1,0 +1,29 @@
+{
+  "name": "eventos-quiz-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "telegram-node-bot": "^4.0.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/srosanatalia/quizBot.git"
+  },
+  "keywords": [
+    "chatbot"
+  ],
+  "author": "Natalia Rosa",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/srosanatalia/quizBot/issues"
+  },
+  "homepage": "https://github.com/srosanatalia/quizBot#readme"
+}
