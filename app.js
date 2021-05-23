@@ -4,7 +4,10 @@ require('dotenv').config();
 var express = require('express');
 
 var app = express();
-app.set('port', (process.env.PORT || 5000));
+const PORT = process.env.PORT || 3000;
+app.set(PORT, () => {
+    console.log(`Our app is running on port ${ PORT }`);
+});
 
 const Telegram = require('telegram-node-bot')
 const TelegramBaseController = Telegram.TelegramBaseController
