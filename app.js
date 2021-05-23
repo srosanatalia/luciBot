@@ -14,7 +14,6 @@ const TelegramBaseController = Telegram.TelegramBaseController
 const TextCommand = Telegram.TextCommand
 
 const chatbot = new Telegram.Telegram(process.env.TOKEN)
-
 class EventsController extends TelegramBaseController {
     acaoMiar(scope) {
 
