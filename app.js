@@ -47,12 +47,21 @@ class EventsController extends TelegramBaseController {
         scope.sendMessage(sentenca)
     }
 
+    acaoSobre(scope) {
+
+        let lista = ['Oi, eu sou um bot chamado Luci!']
+        let sentenca = lista[Math.floor(Math.random() * lista.length)]
+
+        scope.sendMessage(sentenca)
+    }
+
     get routes() {
         return {
             'miar': 'acaoMiar',
             'comida': 'acaoComida',
             'passeio': 'acaoPasseio',
             'mimi': 'acaoMimi',
+            'sobre': 'acaoSobre',
         }
     }
 }
@@ -61,3 +70,4 @@ chatbot.router.when(new TextCommand('/miar', 'miar'), new EventsController())
 chatbot.router.when(new TextCommand('/comida', 'comida'), new EventsController())
 chatbot.router.when(new TextCommand('/passeio', 'passeio'), new EventsController())
 chatbot.router.when(new TextCommand('/mimi', 'mimi'), new EventsController())
+chatbot.router.when(new TextCommand('/sobre', 'sobre'), new EventsController())
